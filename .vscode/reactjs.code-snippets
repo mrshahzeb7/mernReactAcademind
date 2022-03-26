@@ -1,0 +1,1022 @@
+{
+  "MyFunctionComponent": {
+    "prefix": "myfun",
+    "body": [
+      "import React from 'react';",
+      "",
+      "",
+      "export const ${1:componentName} = (props) => {",
+      "  return <div></div>;",
+      "};",
+      "",
+      "",
+      "",
+
+      ""
+    ],
+    "description": "MyFunctionComponent"
+  },
+
+  "SvgIcon": {
+    "prefix": "<Svg/>",
+    "body": [
+      "      <${1:IconName}",
+      "      height={responsiveFontSize(3)}",
+      "      width={responsiveFontSize(3)}",
+      "      fill={colors.white}",
+      "      />"
+    ],
+    "description": "SvgIcon"
+  },
+
+  "Image": {
+    "prefix": "<Image",
+    "body": [
+      "      <Image",
+      "        style={styles.${1:example}}",
+      "        placeHolderType={'User'}",
+      "        loaderType={'ActivityIndicator'}",
+      "        source={{uri: ''}}",
+      "      />"
+    ],
+    "description": "Image"
+  },
+
+  "TouchableOpacity": {
+    "prefix": "<TouchableOpacity",
+    "body": [
+      "${1:styleName}: {",
+      "marginTop: '10%',",
+      "backgroundColor: 'red',",
+      "width: '80%',",
+      "borderRadius: 10,",
+      "alignItems: 'center',",
+      "justifyContent: 'center',",
+      "},",
+      "",
+      "",
+      "<TouchableOpacity",
+      "style={styles.${1:styleName}}",
+      "onPress={() => {",
+      "",
+      "}}>",
+      "",
+
+      "</TouchableOpacity>",
+      ""
+    ],
+    "description": "<TouchableOpacity"
+  },
+
+  "Text": {
+    "prefix": "<Text",
+    "body": ["<Text style={styles.${1:styleName}}></Text>"],
+    "description": "Text"
+  },
+  "<StatusBar": {
+    "prefix": "<StatusBar",
+    "body": ["", "<StatusBar/>", ""],
+    "description": "StatusBar"
+  },
+  "ImageBackground": {
+    "prefix": "<ImageBackground",
+    "body": [
+      "      <ImageBackground",
+      "        placeHolderType={'Car'}",
+      "        loaderType={'SkeletonPlaceholder'}",
+      "        style={styles.${1:name}}",
+      "        imageStyle={styles.${1:example}Image}",
+      "        source={{",
+      "          uri:''",
+      "        }}>",
+      "",
+      "</ImageBackground>"
+    ],
+    "description": "ImageBackground"
+  },
+
+  "ScrollView": {
+    "prefix": "<ScrollView",
+    "body": [
+      "",
+      "${1:styleName}: {",
+      "height: responsiveHeight(100),",
+      "width: responsiveWidth(100),",
+      "alignItems:'center',",
+      "justifyContent:'center'",
+      "},",
+      "",
+      "<ScrollView keyboardShouldPersistTaps={'handled'}>",
+      "<View style={styles.${1:styleName}}>",
+      "</View>",
+      "</ScrollView>",
+      ""
+    ],
+    "description": "ScrollView"
+  },
+  "conditional field": {
+    "prefix": "...(",
+
+    "body": ["{...(${1:value} ? { : } : null)}"],
+
+    "description": "conditional field"
+  },
+  "const state": {
+    "prefix": "const state",
+    "body": ["const [${1:stateName}, set${1:stateName}] = useState();"],
+    "description": "const state"
+  },
+
+  "const function": {
+    "prefix": "const function",
+    "body": ["", "const ${1:Name}=()=>{", "", "}", ""],
+    "description": "const function"
+  },
+
+  "try catch": {
+    "prefix": "try{",
+    "body": ["", "try {", "", "} catch (e) {", " console.log(e)", "", "}", ""],
+    "description": "try catch"
+  },
+
+  "console": {
+    "prefix": "console",
+    "body": ["console.log('$0')"],
+    "description": "console"
+  },
+
+  "For Loop": {
+    "prefix": "for(){",
+    "body": ["", "for(let i=0;i<$0.length;i++)", "{", "", "}", ""],
+    "description": "For Loop"
+  },
+
+  "Trim": {
+    "prefix": ".replace",
+    "body": [".replace(/^\\s+|\\s+$/g, '')"],
+    "description": "Trim"
+  },
+
+  "Icon": {
+    "prefix": "<Icon",
+    "body": [
+      "import $0 from 'react-native-vector-icons/$0';",
+      "",
+
+      "<$0",
+      "name=\"\"",
+      "color={COLOR.primary}",
+      "size={responsiveFontSize(2.5)}",
+      "/>",
+
+      ""
+    ],
+    "description": "Vector Icon"
+  },
+
+  "navigation": {
+    "prefix": "props.navigation.navigate",
+    "body": ["props.navigation.navigate(ROUTE.$0,{data:''})"],
+    "description": "navigation"
+  },
+
+  "getParams": {
+    "prefix": "props.route.params.data",
+    "body": "props.route.params.data",
+    "description": "getParams"
+  },
+
+  "getNavigationValue": {
+    "prefix": "props.getParam",
+    "body": ["props.navigation.getParam('$0')"],
+    "description": "getNavigationValue"
+  },
+
+  "Toast": {
+    "prefix": "toast.show",
+    "body": [
+      "import Toast from 'react-native-simple-toast';",
+      "Toast.show('$0');"
+    ],
+    "description": "Toast"
+  },
+
+  "ActivityIndicator": {
+    "prefix": "<ActivityIndicator",
+    "body": [
+      "      activityIndicator: {",
+      "    flex: 1,",
+      "    backgroundColor: 'white',",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "  },",
+      "  ",
+      "",
+      "      {isLoading ? (",
+      "        <View style={styles.activityIndicator}>",
+      "          <ActivityIndicator",
+      "            size={responsiveFontSize(8)}",
+      "            color={COLOR.primary}",
+      "          />",
+      "        </View>",
+      "      ) : ("
+    ],
+    "description": "<ActivityIndicator"
+  },
+
+  "MapView": {
+    "prefix": "<MapView",
+    "body": [
+      "              ",
+      "  map: {",
+      "    position: 'absolute',",
+      "    left: 0,",
+      "    borderRadius: 10,",
+      "    right: 0,",
+      "    top: 0,",
+      "    bottom: 0,",
+      "  },",
+      "<MapView",
+      "                style={styles.map}",
+      "                ref={refMap}",
+      "                showsUserLocation={true}",
+      "                initialRegion={region}",
+      "                region={region}",
+      "                onRegionChangeComplete={(region) => {",
+      "                  setregion(region);",
+      "                }}>",
+      "                <MapView.Marker coordinate={region} />",
+      "              </MapView>"
+    ],
+    "description": "MapView"
+  },
+
+  "MapDot": {
+    "prefix": "MapDot",
+    "body": [
+      "            import Entypo from 'react-native-vector-icons/Entypo';",
+      "              <View",
+      "                style={{",
+      "                  position: 'absolute',",
+      "                  alignSelf: 'center',",
+      "                  height: '100%',",
+      "                  zIndex: 1,",
+      "                  justifyContent: 'center',",
+      "                  alignItems: 'center',",
+      "                }}>",
+      "                <Entypo",
+      "                  name=\"dot-single\"",
+      "                  color={COLOR.primary}",
+      "                  size={responsiveFontSize(2.5)}",
+      "                />",
+      "              </View>"
+    ],
+    "description": "MapDot"
+  },
+
+  "TextInput": {
+    "prefix": "<TextInput",
+    "body": [
+      "<TextInput",
+      "                placeholder={''}",
+      "                keyboardType={''}",
+      "                placeholderTextColor={colors.lightText}",
+      "                style={styles.textInput}",
+      "                onChangeText={(text) => {",
+      "                }}",
+      "                value={}",
+      "                mask={Mask.date}",
+      "              />"
+    ],
+    "description": "TextInput"
+  },
+  "Api response": {
+    "prefix": "Api response",
+    "body": [
+      "",
+      "      setisLoading(true);",
+      "console.log('///======================Api Called==============================///');",
+      "const response = await ${1:requestName} ();",
+      "      ;",
+      "      if (response.success) {",
+
+      "      let data = response.response.data;",
+
+      "      setisLoading(false);",
+      "      } else {",
+      "        Toast.show(response.errorMessage);",
+      "        setisLoading(false);",
+      "      }"
+    ],
+    "description": "Api response"
+  },
+
+  "Immediately Invoked Function Expressions": {
+    "prefix": "IIFE",
+    "body": ["    (async () => {", "", "$0", "    })();"],
+    "description": "Immediately Invoked Function Expressions"
+  },
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": ["  useEffect(()=>{", "$0", "  },[])"],
+    "description": "useEffect"
+  },
+  "Filter": {
+    "prefix": ".filter()",
+    "body": [
+      "    const filteredList = ${1:arrayName}.filter((item,index) => {",
+      "      return item.id$0 === 5;",
+      "    });"
+    ],
+    "description": "Filter"
+  },
+
+  "Map": {
+    "prefix": ".map()",
+    "body": [".map((item, index) => {", "      return item$0;", "    });"],
+    "description": "Map"
+  },
+  ".Find": {
+    "prefix": ".Find",
+    "body": [
+      ".find((item, index) => {",
+      "      return item.id$0 === 3;",
+      "    });"
+    ],
+    "description": "Find"
+  },
+
+  "ForEach": {
+    "prefix": ".forEach()",
+    "body": [
+      ".forEach((item, index) => {",
+      "      console.log(`${item.name$0}`);",
+      "    });"
+    ],
+    "description": "forEach"
+  },
+
+  "some": {
+    "prefix": ".some()",
+    "body": [".some((item) => {", "      return item.id$0 === 5;", "    });"],
+    "description": "return true or false if 1 found in array "
+  },
+
+  "every": {
+    "prefix": ".every()",
+    "body": [".every((item) => {", "      return item.id$0 > 1;", "    });"],
+    "description": "if every item is array match with the condition "
+  },
+
+  "total of array": {
+    "prefix": ".reduce()",
+    "body": [
+      "    const total = ${1:arrayName}.reduce((currentTotal, item) => {",
+      "      return item.price$0 + currentTotal;",
+      "    }, 0);"
+    ],
+    "description": "to find total in array"
+  },
+  "TypeScriptFunction": {
+    "prefix": "myfunTypescript",
+    "body": [
+      "import React from 'react';",
+      "import {StyleSheet, View} from 'react-native';",
+      "",
+      "import {",
+      "  responsiveHeight,",
+      "  responsiveWidth,",
+      "  responsiveFontSize,",
+      "} from 'react-native-responsive-dimensions';",
+      "",
+      "export interface Props {}",
+      "",
+      "const ${1:Component Name}: React.FC<Props> = ({}) => {",
+      "  return <View style={styles.container}/>;",
+      "};",
+      "",
+      "",
+      "// styles",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    backgroundColor: 'grey',",
+      "  },",
+      "});",
+      "",
+      "export default ${1:Component Name};",
+      ""
+    ],
+    "description": "TypeScriptFunction"
+  },
+
+  "go to previous screen": {
+    "prefix": "props.navigation.goBack()",
+    "body": ["props.navigation.goBack()"],
+    "description": "go to previous screen"
+  },
+
+  "opacity ": {
+    "prefix": "rgba opacity",
+    "body": ["rgba(52, 52, 52, 0.8)"],
+    "description": "opacity "
+  },
+
+  "search functionality": {
+    "prefix": "updateSeatch",
+    "body": [
+      "const updateSearch = (search) => {",
+      "  setSearch(search);",
+      "  let name = '';",
+      "  const filteredList = ${1:list}.filter((item, index) => {",
+      "    name = item.full_name.toLowerCase();",
+      "",
+      "    if (name.includes(search.toLowerCase())) {",
+      "      return true;",
+      "    }",
+      "    return false;",
+      "  });",
+      "",
+      "  set${1:list}(filteredList);",
+      "};"
+    ],
+    "description": "search functionality"
+  },
+  "Sort by": {
+    "prefix": "SortBy",
+    "body": [
+      "",
+      "           for (let i = 0; i < newArr.length; i++) {",
+      "",
+      "            for (let j = i; j < newArr.length; j++) {",
+      "              console.log(newArr[j].distance);",
+      "",
+      "              if (newArr[i].distance < newArr[j].distance) {",
+      "                temp = newArr[i];",
+      "                newArr[i] = newArr[j];",
+      "                newArr[j] = temp;",
+      "              }",
+      "            }",
+      "          }"
+    ],
+    "description": "Sort by"
+  },
+
+  "my validation": {
+    "prefix": "Validation check",
+    "body": [
+      "    if (",
+      "      checkValidation(",
+      "        ${1:value},",
+      "        ${1:value}Validation,",
+      "        set${1:value}Validation,",
+      "      )",
+      "    ) {",
+      "      return;",
+      "    }"
+    ],
+    "description": "my validation"
+  },
+
+  "MemodFuncComponent": {
+    "prefix": "memodFuncComponent",
+    "body": [
+      "const MemodFuncComponent = React.memo(${1:ComponentName});",
+      "export default MemodFuncComponent;",
+      ""
+    ],
+    "description": "MemodFuncComponent"
+  },
+  "Context": {
+    "prefix": "context",
+    "body": [
+      "import React, {createContext, useState, useEffect} from 'react';",
+      "",
+      "const ${1:name}Context = createContext();",
+      "",
+      "const Provider = (props) => {",
+      "  const [userData, setuserData] = useState({});",
+      "",
+      "",
+      "  return (",
+      "    <${1:name}Context.Provider",
+      "      value={{",
+      "        userData,",
+      "        setuserData",
+      " ",
+      "      }}>",
+      "      {props.children}",
+      "",
+      "    </${1:name}Context.Provider>",
+      "  );",
+      "};",
+      "",
+      "export {${1:name}Context as default, Provider as ${1:name}ContextProvider};",
+      ""
+    ],
+    "description": "Context"
+  },
+
+  "console.log(JSON.stringify": {
+    "prefix": "console.log(JSON.stringify())",
+    "body": ["      console.log(JSON.stringify(${1:Name},null,8))"],
+    "description": "console.log(JSON.stringify"
+  },
+
+  "alert(JSON.stringify": {
+    "prefix": "alert(JSON.stringify())",
+    "body": ["      alert(JSON.stringify(${1:Name},null,8))"],
+    "description": "alert(JSON.stringify"
+  },
+
+  "console.log(111": {
+    "prefix": "console.log('1111111111')",
+    "body": [
+      "    console.log(",
+      "        '11111111111111111111111111111111111111111111111111111111111',",
+      "      );"
+    ],
+    "description": "console.log(111"
+  },
+  "JSON.stringify())": {
+    "prefix": "JSON.stringify())",
+    "body": ["JSON.stringify(${1:name},null,8))"],
+    "description": "JSON.stringify())"
+  },
+
+  "SyleSheet": {
+    "prefix": "syleSheet.create",
+    "body": [
+      "import {StyleSheet, StatusBar} from 'react-native';",
+      "",
+      "import {",
+      "  responsiveHeight,",
+      "  responsiveWidth,",
+      "  responsiveFontSize,",
+      "} from 'react-native-responsive-dimensions';",
+      "",
+      "export default StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    backgroundColor: 'black',",
+      "  },",
+      "});",
+      ""
+    ],
+    "description": "SyleSheet"
+  },
+  "flat list ": {
+    "prefix": "<FlatList ",
+    "body": [
+      "",
+      "   const keyExtractor = (item, index) => index.toString();",
+      "  const renderItem = ({item}: any) => {",
+      "    return (",
+      "      <Text>item</Text>",
+      "    )",
+      "    ",
+      "  };",
+      "",
+      "",
+      "",
+      "              <FlatList",
+      "            showsVerticalScrollIndicator={false}",
+      "            data={${1:dataSource}}",
+      "            ListEmptyComponent={",
+      "              <EmptyScreenMessage",
+      "                heading={'No Orders'}",
+      "                imageSource={{",
+      "                  uri:",
+      "                    'https://cdn.dribbble.com/users/1168645/screenshots/3152485/no-orders_2x.png',",
+      "                }}",
+      "                details={'You currently have no orders in progress'}",
+      "              />",
+      "            }",
+      "            keyExtractor={keyExtractor}",
+      "            renderItem={renderItem}",
+      "          />"
+    ],
+    "description": "flatlist "
+  },
+
+  "onFocusListener": {
+    "prefix": "onFocusListener",
+    "body": [
+      " ",
+      "    const unsubscribe = props.navigation.addListener('focus', () => {",
+      "    ${1:functionName}",
+      "    });",
+      "",
+      "    return unsubscribe;",
+      ""
+    ],
+    "description": "onFocusListener"
+  },
+
+  "replace any character with": {
+    "prefix": ".replaceCharacterInWord();",
+    "body": [".replace(/\\s/gi, \"${1:example}\");"],
+    "description": "replace any character with"
+  },
+
+  "Object.keys()": {
+    "prefix": "Object.keys()",
+    "body": ["Object.keys()"],
+    "description": "Object.keys()"
+  },
+
+  "back handler": {
+    "prefix": "backHandler = BackHandler.addEventListener(",
+    "body": [
+      "  const handleBackButtonClick = () => {",
+      "",
+      "",
+      "    return true;",
+      "  };",
+      "    const backHandler = BackHandler.addEventListener(",
+      "      \"hardwareBackPress\",",
+      "      handleBackButtonClick",
+      "    );",
+      "",
+      "    return () => backHandler.remove();",
+      ""
+    ],
+    "description": "back handler"
+  },
+  "KeyBoardListener": {
+    "prefix": "Keyboard.addListener",
+    "body": [
+      "  const [PaddingBottom, setPaddingBottom] = useState(0);",
+      "",
+      "    const keyboardDidShowListener = Keyboard.addListener(",
+      "      'keyboardDidShow',",
+      "      (e: KeyboardEvent) => {",
+      "",
+      "        setPaddingBottom(e.endCoordinates.height + responsiveHeight(7)); // or some other action",
+      "      },",
+      "    );",
+      "    const keyboardDidHideListener = Keyboard.addListener(",
+      "      'keyboardDidHide',",
+      "      () => {",
+      "",
+      "        setPaddingBottom(StatusBar.currentHeight); // or some other action",
+      "      },",
+      "    );",
+      "",
+      "    return () => {",
+      "      keyboardDidHideListener.remove();",
+      "      keyboardDidShowListener.remove();",
+      "    };"
+    ],
+    "description": "KeyBoardListener"
+  },
+  "scrollRef.current.scrollTo": {
+    "prefix": "scrollRef.current.scrollTo",
+    "body": [
+      "      scrollRef.current.scrollTo({y: responsiveHeight(0), animated: true});"
+    ],
+    "description": "scrollRef.current.scrollTo"
+  },
+
+  "mapRef.animateToRegion": {
+    "prefix": "mapRef.animateToRegion",
+    "body": [
+      "     setTimeout(() => {",
+      "        mapRef.current.animateToRegion(",
+      "          {",
+      "            latitude: region.latitude,",
+      "            longitude: region.longitude,",
+      "            latitudeDelta: 0.009,",
+      "            longitudeDelta: 0.009,",
+      "          },",
+      "          1000,",
+      "        );",
+      "",
+      "        allowTabToChange.current = true;",
+      "      }, 1000);"
+    ],
+    "description": "mapRef.animateToRegion"
+  },
+  "first Time": {
+    "prefix": "firstTimeUseRef",
+    "body": [
+      "    const firstTime = useRef(true);",
+      "    if (firstTime.current) {",
+      "      firstTime.current = false;",
+      "    } else {",
+      "    }"
+    ],
+    "description": "first Time"
+  },
+  "transform": {
+    "prefix": "rotate 90",
+    "body": ["transform: [{rotateZ: '90deg'}]"],
+    "description": "transform"
+  },
+  "Button Snipper": {
+    "prefix": "<Button",
+    "body": [
+      "        <Button",
+      "        title={'${1:example}'}",
+      "        onPress={on${1:example}Pressed}",
+      "        style={styles.button}",
+      "        titleStyle={styles.buttonTitle}",
+      "        />"
+    ],
+    "description": "Button Snipper"
+  },
+
+  "Saga Function": {
+    "prefix": "saga function",
+    "body": [
+      "",
+      "function* ${1:name}Request(api, action) {",
+      "  try {",
+      "    const {payload} = action;",
+      "    const response = yield call(api.${1:name}Request, payload);",
+      "    const {data} = response;",
+      "",
+      "    if (data?.isSuccess) {",
+      "",
+      "        yield put(Actions.${1:name}Success(data?.result));",
+      "     } else {",
+      "      yield put(Actions.${1:name}Failure());",
+      "    }",
+      "  } catch (err) {",
+      "    catchError()",
+      "    yield put(Actions.${1:name}Failure());",
+      "  }",
+      "}"
+    ],
+    "description": "Saga Function"
+  },
+  "redux action": {
+    "prefix": "redux action",
+    "body": [
+      "${1:name}Request: ['payload'],",
+      "${1:name}Success: ['data'],",
+      "${1:name}Failure: null,",
+      "",
+      "${1:name}: {",
+      "  data: null,",
+      "  error: null,",
+      "  payload: null,",
+      "  loading: false,",
+      "},",
+      "",
+      "${1:name}: (state) => state.${1:name},",
+      "",
+      "",
+      "export const ${1:name}Request = (state, {payload}) => {",
+
+      "  return state.merge({",
+      "    ${1:name}: {",
+      "      ...state.${1:name},",
+      "      loading: true,",
+      "      payload: payload,",
+      "    },",
+      "  });",
+      "};",
+      "",
+      "export const ${1:name}Success = (state, {data}) => {",
+      "  return state.merge({",
+      "    ${1:name}: {",
+      "      ...state.${1:name},",
+      "      loading: false,",
+      "      data: data,",
+      "      error: null,",
+      "    },",
+      "  });",
+      "};",
+      "",
+      "export const ${1:name}Failure = (state) => {",
+      "  return state.merge({",
+      "    ${1:name}: {",
+      "      ...state.${1:name},",
+      "      loading: false,",
+      "      payload: null,",
+      "      error: true,",
+      "    },",
+      "  });",
+      "};",
+      "",
+      "",
+      "",
+      "[Types._REQUEST]: ${1:name}Request,",
+      "[Types._SUCCESS]: ${1:name}Success,",
+      "[Types._FAILURE]: ${1:name}Failure,",
+      ""
+    ],
+    "description": "redux action"
+  },
+
+  "dispatch": {
+    "prefix": "dispatch(",
+    "body": ["     dispatch(Actions.${1:example}());"],
+    "description": "dispatch"
+  },
+  "selector": {
+    "prefix": "selector",
+    "body": [
+      "import {useDispatch, useSelector} from 'react-redux';",
+      "const dispatch = useDispatch();"
+    ],
+    "description": "selector"
+  },
+
+  "will create new Stack": {
+    "prefix": "newStack",
+    "body": [
+      "const ${1:stackName}Stack = createNativeStackNavigator();",
+      "const ${1:stackName}Nav = () => (",
+      "  <${1:stackName}Stack.Navigator",
+      "    screenOptions={screenOptions}",
+      "    initialRouteName={'${1:stackName}'}>",
+      "    <${1:stackName}Stack.Screen name={''} component={} />",
+      "  </${1:stackName}Stack.Navigator>",
+      ");",
+      "",
+
+      ""
+    ],
+    "description": "will create new Stack"
+  },
+  "CallBack": {
+    "prefix": "useCallBack(",
+    "body": [
+      "  const ${1:functionName} = useCallback(",
+      "    () => {",
+      "      return (",
+      "   ",
+      "      );",
+      "    },",
+      "",
+      "    [],",
+      "  );"
+    ],
+    "description": "CallBack"
+  },
+  "Class Component": {
+    "prefix": "myClass",
+    "body": [
+      "",
+      "import React from 'react';",
+      "import {View, StyleSheet} from 'react-native';",
+      "",
+      "import {",
+      "  responsiveHeight,",
+      "  responsiveWidth,",
+      "  responsiveFontSize,",
+      "} from 'react-native-responsive-dimensions';",
+      "",
+      "class ${1:name} extends React.Component {",
+      "  constructor(props) {",
+      "    super(props);",
+      "    ",
+      "  }",
+      "",
+      "",
+      "",
+      "",
+      "  render() {",
+      "    return (",
+      "      <View style={styles.container}>",
+      "      ",
+      "      </View>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "const styles=StyleSheet.create({",
+      "    container: {",
+      "      flex: 1,",
+      "      backgroundColor: 'black',",
+      "    },",
+      "  });",
+      "  ",
+      "  ",
+      "  export default ${1:name};"
+    ],
+    "description": "Class Component"
+  },
+
+  "new Array(5).fill(0)": {
+    "prefix": "new Array().fill(0)",
+    "body": ["new Array(length).fill(0)"],
+    "description": "new Array(5).fill(0)"
+  },
+
+  "onEndReached": {
+    "prefix": "onEndReached",
+    "body": [
+      "const isListOnEnd = useRef(false);",
+      "",
+      "",
+      "const onEndReached = ({distanceFromEnd}) => {",
+      "    if (distanceFromEnd <= 0 || isListOnEnd.current) return;",
+      "    applyThis.pageNumber = listingPagination.currentPage + 1;",
+      "//dispatch",
+      "    isListOnEnd.current = true;",
+      "  };",
+      "",
+      "  const onScrollBegin = () => {",
+      "    isListOnEnd.current = false;",
+      "  };",
+      "",
+      "",
+      "",
+      "  onEndReached={onEndReached}",
+      "  onEndReachedThreshold={0.1}",
+      "  onMomentumScrollBegin={onScrollBegin}"
+    ],
+    "description": "onEndReached"
+  },
+  "disableButtonForSeconds": {
+    "prefix": "disableButtonForSeconds",
+    "body": [
+      "  const disableNextButton = useRef(false);",
+      "  const disableNextButtonForSecond = () => {",
+      "    disableNextButton.current = true;",
+      "    setTimeout(() => {",
+      "      disableNextButton.current = false;",
+      "    }, 2000);",
+      "  };",
+      "",
+      "//in on buttonClick",
+      "   if (disableNextButton.current) {",
+      "      return;",
+      "    } else {",
+      "      disableNextButtonForSecond();",
+      "    }"
+    ],
+    "description": "disableButtonForSeconds"
+  },
+
+  "post request api.tsx": {
+    "prefix": "postRequest",
+    "body": [
+      "  const ${1:name} = (payload) => {",
+      "    return api.post('/mobile/', payload);",
+      "  };"
+    ],
+    "description": "post request api.tsx"
+  },
+
+  "get request api.tsx": {
+    "prefix": "getRequest",
+    "body": [
+      "  const ${1:name} = (payload) => {",
+      "    return api.get('/mobile/'+payload);",
+      "  };"
+    ],
+    "description": "get request api.tsx"
+  },
+  "renderCounter": {
+    "prefix": "renderCounter",
+    "body": [
+      "  const renderedTime = useRef(0);",
+      "  renderedTime.current += 1;",
+      "  alert(JSON.stringify(renderedTime.current, null, 8));"
+    ],
+    "description": "renderCounter"
+  },
+  "useSelector": {
+    "prefix": "useSelector((state) => state?",
+    "body": ["const  =useSelector((state) => state?.${1:reduxName})"],
+    "description": "useSelector"
+  },
+  "safeAreaStyle": {
+    "prefix": "safeAreaStyle",
+    "body": [
+      "const safeAreaStyle = useRef({paddingTop: IOS ? useSafeAreaInsets().top : StatusBar.currentHeight}).current;"
+    ],
+    "description": "safeAreaStyle"
+  }
+
+  // "Print to console": {
+  //
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // },
+
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a
+  // description. Add comma separated ids of the languages where the snippet is applicable in the
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  //
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // },
+}
